@@ -19,4 +19,6 @@ class ChallengingDomPage(BasePage):
 
     def has_answer_script(self):
         scripts = self.driver.find_elements(By.XPATH, "//script[contains(text(),'Answer:')]")
+        print("sachin")
         return len(scripts) > 0
+
